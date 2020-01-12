@@ -1,0 +1,19 @@
+{
+  "name": "baseball-logger",
+  "version": "1.0.0",
+  "description": "### My husband mentioned that he needed something to keep track of which pitches he was throwing in his baseball video game, and a random pitch generator for when he was having trouble deciding what to throw.  I used Javascript, HTML, CSS, and jQuery to try and solve his problem!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merbashert/baseball-logger.git"
+  },
+  "author": "Merediht Bashert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merbashert/baseball-logger/issues"
+  },
+  "homepage": "https://github.com/merbashert/baseball-logger#readme"
+}
