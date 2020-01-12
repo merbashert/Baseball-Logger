@@ -1,3 +1,3 @@
 <?php
-include_once("baseball.html"); 
+include_once("index.html"); 
 ?>
