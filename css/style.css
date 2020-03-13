@@ -8,8 +8,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 40px;
+    justify-content: center;
 }
 
 .zone {
@@ -23,6 +22,25 @@ body {
     border: .5px solid var(--maroon);
     place-items: center;
 }
+
+.onePitch, .bat-over{
+    font-size: 12px;
+    padding: 3px;
+    border: .5px solid var(--maroon);
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-sizing: border-box;
+}
+
+
+.bat-over {
+    background-color: var(--maroon);
+    color: var(--linen);
+    justify-content: center;
+}
+
 
 #upper-left {
     grid-column-start: 2;
@@ -140,12 +158,6 @@ body {
     max-height: 480px;
 }
 
-.bat-over {
-    background-color: var(--maroon);
-    color: var(--linen);
-    justify-content: center;
-}
-
 @keyframes color {
 
     50% {
@@ -164,7 +176,7 @@ body {
 .paper {
     border: 1px solid var(--maroon);
     background-color: var(--linen);
-    height: 550px;
+    height: 520px;
 }
 
 .paper h1 {
@@ -191,12 +203,30 @@ body {
     }
 
     .paper {
-        height: 350px;
-        width: 899px;
+        width: 900px;
     }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 900px) {
+    .paper, .zone {
+        width: 517px;
+        box-sizing: border-box;
+    }
+
+    .zone {
+        background-image: url(../imgs/at-bat-cropped.png);
+        background-repeat: no-repeat;
+        grid-template-columns: 0px 100px 100px 100px 1fr;
+    }
+}
+
+@media (max-width: 517px) {
+    .zone {
+        background: none;
+        background-color: var(--linen);
+        grid-template-columns: 1fr 100px 100px 100px 1fr;
+    }
+
     .paper, .zone {
         width: 100%;
     }
