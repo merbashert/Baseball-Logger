@@ -1,5 +1,6 @@
 :root {
     --maroon: #990012;
+    --linen: #fbf7f5;
 }
 body {
     font-family: 'Special Elite', cursive;
@@ -8,6 +9,7 @@ body {
 .container {
     display: flex;
     justify-content: flex-start;
+    padding-left: 40px;
 }
 
 .zone {
@@ -73,6 +75,13 @@ body {
     background-color: green;
     box-sizing: border-box;
     box-shadow: 1px 1px rgb(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--linen);
+    text-shadow: 2px 1px rgb(0,0,0,.5);
+    cursor: pointer;
 }
 
 .randomSquare {
@@ -83,44 +92,43 @@ body {
 }
 
 
-.atBat, .button, .clear {
+.button {
     height: 30px;
-    width: 100px;
+    width: 120px;
     border: 1px solid black;
-    margin-top: 4px;
     background-color: var(--maroon);
     font-family: Times, serif;
     font-size: 14px;
-    color: #fbf7f5;
+    color: var(--linen);
     font-family: 'Special Elite', cursive;
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
-.atBat {
-    grid-column-start: 3;
+
+.buttons {
+    grid-column: 2/5;
     grid-row-start: 5;
-}
-
-.button {
-    width: 120px;
-    grid-column-start: 1;
-    grid-row-start: 6;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .clear {
+    height: 30px;
     width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 4px 6px;
     margin-left: 6px;
-    margin-bottom: 5px;
-    margin-right: 6px;
     padding: 1px;
+    border: 1px solid black;
+    background-color: var(--maroon);
+    font-size: 14px;
+    color: var(--linen);
+    font-family: 'Special Elite', cursive;
 }
 
-.random {
-    width: 200px;
-}
 
 .list {
     display: flex;
@@ -132,20 +140,10 @@ body {
     max-height: 480px;
 }
 
-
-.onePitch, .bat-over {
-    font-size: 12px;
-    padding-top: 3px;
-    border: .5px solid var(--maroon);
-    width: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
 .bat-over {
-    border: 3px solid var(--maroon);
+    background-color: var(--maroon);
+    color: var(--linen);
+    justify-content: center;
 }
 
 @keyframes color {
@@ -165,7 +163,7 @@ body {
 
 .paper {
     border: 1px solid var(--maroon);
-    background-color: #fbf7f5;
+    background-color: var(--linen);
     height: 550px;
 }
 
@@ -183,4 +181,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 1320px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paper {
+        height: 350px;
+        width: 899px;
+    }
+}
+
+@media (max-width: 930px) {
+    .paper, .zone {
+        width: 100%;
+    }
 }
