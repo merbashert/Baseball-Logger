@@ -18,7 +18,7 @@ $(() => {
         $pitch.text('')
     })
 
-    $('.button').on("click", () => {
+    $('.random').on("click", () => {
         let squareNumber = Math.floor(Math.random() * 8);
 
         if (squareNumber === 1) {
