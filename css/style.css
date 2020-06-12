@@ -131,7 +131,7 @@ body {
     justify-content: space-around;
 }
 
-.clear {
+.clear, .undo {
     height: 30px;
     width: 60px;
     display: flex;
@@ -147,6 +147,10 @@ body {
     font-family: 'Special Elite', cursive;
 }
 
+.list-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .list {
     display: flex;
