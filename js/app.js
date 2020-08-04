@@ -19,12 +19,15 @@ $(() => {
     //clear pitch log
     $('.clear').on('click', () => {
         $pitch.text('')
+        pitchNumber = 1;
     })
 
     //undo last clicked pitch
     $('.undo').on('click', () => {
         $(".onePitch:last-child").remove()
-        pitchNumber--;
+        if(pitchNumber != 1) {
+            pitchNumber--;
+        }
     })
 
     //random square generator
