@@ -159,7 +159,7 @@ body {
     align-content: flex-start;
     list-style-type: none;
     width: 500px;
-    max-height: 480px;
+    height: 460px;
 }
 
 @keyframes color {
@@ -181,6 +181,7 @@ body {
     border: 1px solid var(--maroon);
     background-color: var(--linen);
     height: 520px;
+    overflow: scroll;
 }
 
 .paper h1 {
@@ -197,6 +198,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 5px 0;
 }
 
 @media (max-width: 1320px) {
@@ -210,11 +212,16 @@ body {
         width: 900px;
         height: 320px;
     }
+
+    .list {
+        max-height: 245px;
+    }
+
 }
 
 @media (max-width: 900px) {
     .paper, .zone {
-        width: 517px;
+        width: 522px;
         box-sizing: border-box;
     }
 
@@ -223,6 +230,8 @@ body {
         background-repeat: no-repeat;
         grid-template-columns: 0px 100px 100px 100px 1fr;
     }
+
+
 }
 
 @media (max-width: 517px) {
